@@ -10,4 +10,4 @@ export class EmployeeComponent{
     lastName: string = "Dhakad";
     gender: string = "Male";
     age: number = 28;
-}
+}   
