@@ -1,7 +1,20 @@
 <div>
     <h1>{{pageHeader}}</h1>
     <my-employee></my-employee>
-    <button bind-disabled="isDisabled">Click Me</button>
-    <div>{{badHtml}}</div>
-    <div [innerHtml]='badHtml'></div>
+    
 </div>
+
+<br>
+
+
+<p *appUnless="condition" class="code unless">
+  (A) &lt;p *appUnless="condition" class="code unless"&gt;
+</p> 
+
+<p *NewappUnless="testValue">Hello All </p>
+
+<button
+    (click)="condition = !condition"  >
+    Toggle condition to {{condition ? 'false' : 'true'}}
+  </button>
+ 

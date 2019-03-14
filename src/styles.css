@@ -9,6 +9,10 @@ table{
   font-size: large;
   border-collapse: collapse;
 }
-td{
+td , thead{
   border: 1px solid black;
 }
+
+.bold{font-weight:bold}
+.italic{font-style: italic}
+.color{color: red}
