@@ -13,7 +13,14 @@ export class AppComponent{
     name:string = "amit";
 
     condition:boolean = false;
-    testValue:any = {"name":"test","lname":"dhakad"};
+    testValue:any = {"name":"amit",
+                    "lname":"dhakad",
+                      "test":"test"};
+    testValue2:any = {"name":"amit",
+                    "lname":"dhakad",
+                      "test":"test"};
 
+
+    usertext:string = "Hello Raghu";
 
 }

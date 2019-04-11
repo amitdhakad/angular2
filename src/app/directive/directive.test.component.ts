@@ -59,8 +59,16 @@ export class CoustomStrDirective {
 })
 
 export class NewCoustom {
-    @Input() set NewappUnless(condition: boolean) {
-        console.log(condition,'NewappUnless')
+    constructor(
+            private templateRef :TemplateRef<any>,
+            private viewContainer : ViewContainerRef
+    ){}
+
+    @Input() set NewappUnless(testValue: any) {
+         console.log(testValue,this.templateRef)
+         testValue.name = "check";
+        console.log(testValue,this.templateRef)
+         this.viewContainer.createEmbeddedView(this.templateRef);
         
     }
 
